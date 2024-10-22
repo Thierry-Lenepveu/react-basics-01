@@ -1,10 +1,10 @@
 
-interface PokemonProp {
+export interface Pokemon {
   name: string;
   imgSrc?: string;
 }
 
-function PokemonCard(pokemon: PokemonProp) {
+export function PokemonCard(pokemon: Pokemon) {
 
     if (pokemon.imgSrc) {
         return <figure>
@@ -18,5 +18,3 @@ function PokemonCard(pokemon: PokemonProp) {
         <p>???</p>
     </figure>;
 }
-
-export default PokemonCard;
