@@ -1,5 +1,10 @@
 
-function PokemonCard({ pokemon }) {
+interface PokemonProp {
+  name: string;
+  imgSrc?: string;
+}
+
+function PokemonCard(pokemon: PokemonProp) {
 
     if (pokemon.imgSrc) {
         return <figure>
