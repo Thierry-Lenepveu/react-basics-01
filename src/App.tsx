@@ -21,7 +21,7 @@ function App() {
     <>
       <div>
         <PokemonCard name={pokemonList[pokemonIndex].name} imgSrc={pokemonList[pokemonIndex].imgSrc} />
-        <NavBar pokemonIndex={pokemonIndex} pokemonList={pokemonList} setPokemonIndex={setIndex}/>
+        <NavBar pokemonList={pokemonList} setPokemonIndex={setIndex}/>
       </div>
     </>
   )
